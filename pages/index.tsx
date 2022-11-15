@@ -24,12 +24,31 @@ const onCandidateClicked = (data: any) => {
 
 const sortCandidateSkills = (candidates: any) => {
   return candidates.sort((a: any, b: any) => {
-    if (a.skills.length > b.skills.length) {
+    if (a.skills.length < b.skills.length) {
       return 1;
-    } else if (a.length < b.skills.length) {
+    } else if (a.skills.length > b.skills.length) {
       return -1;
     } else {
-      return 0;
+      console.log("a", Object.values(a.skills));
+      const aSkills = Object.values(a.skills);
+      const aScore = aSkills.reduce(
+        (acc: any, val: any) => acc + val.levelValue,
+        0
+      );
+      const bSkills = Object.values(b.skills);
+      const bScore = bSkills.reduce(
+        (acc: any, val: any) => acc + val.levelValue,
+        0
+      );
+
+      if ((aScore as number) < (bScore as number)) {
+        return 1;
+      }
+      if ((aScore as number) > (bScore as number)) {
+        return -1;
+      } else {
+        return 0;
+      }
     }
   });
 };
@@ -227,10 +246,12 @@ const renderCandidates = (candidates: any) => {
     );
 
   let sortedCandidates = sortCandidateSkills(Object.values(candidates));
-  console.log("sortedCandidates", sortedCandidates);
+  console.log("sortCandidateSkills", sortedCandidates);
   const candidatesComponents = sortedCandidates.map(
     (candidate: any, index: number) => {
       let skills = sortCandidateSkillLevel(Object.values(candidate.skills));
+      console.log("sortCandidateSkillLevel", skills);
+
       return (
         <div
           key={index}
