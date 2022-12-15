@@ -21,18 +21,14 @@
   height: 90vh;
 }
 
-.content-list-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+.content-left-aside-container {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100%;
   width: 100%;
 }
 
-.content-aside-container {
+.content-right-aside-container {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;

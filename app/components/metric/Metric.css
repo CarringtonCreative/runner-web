@@ -15,16 +15,24 @@
   margin: 0.25rem;
 }
 
-.metric-container p {
-  color: #351572;
-  font-size: 1rem;
-  font-family: "Gotham Book";
-  margin: 0rem 0.5rem;
+.metric {
+  color: #c9abe3;
+  font-family: "Gotham Black";
+  font-size: 1.15rem;
+  margin: 0rem;
+  line-height: normal;
 }
 
-.metric {
-  font-family: "Gotham Black";
-  font-size: 1rem;
+.metric-label {
+  color: #351572;
+  font-family: "Gotham Medium";
+  font-size: 0.8rem;
+  margin: 0rem;
+  line-height: normal;
+}
+
+.metric-content {
+  margin: 0rem 0.5rem;
 }
 
 .metrics-section-title {

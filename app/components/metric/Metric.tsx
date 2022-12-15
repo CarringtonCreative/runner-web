@@ -5,32 +5,43 @@ import "./Metric.css";
 export interface MetricProps {
   primary?: boolean;
   alt: string;
-  imagePath: StaticImageData;
   title: string;
-  metric: number;
   label: string;
-  iconWidth: number;
-  iconHeight: number;
+  metric: number;
+  icon: StaticImageData;
+  iconWidth?: number;
+  iconHeight?: number;
 }
 
 const renderIcon = (
-  imagePath: StaticImageData,
+  icon: StaticImageData,
   alt: string,
   width: number,
   height: number
 ) => {
-  return <Image src={imagePath} alt={alt} width={width} height={height} />;
+  return <Image src={icon} alt={alt} width={width} height={height} />;
 };
 
 const Metric = (props: MetricProps) => {
-  const { alt, imagePath, title, metric, label, iconWidth, iconHeight } = props;
+  const {
+    alt,
+    icon,
+    title,
+    metric,
+    label,
+    iconWidth = 35,
+    iconHeight = 35,
+  } = props;
   return (
     <div className="metric-container">
-      {renderIcon(imagePath, alt, iconWidth, iconHeight)}
-      <p className="metric-content">
-        {title}
-        <span className="metric">{metric}</span> {label}
-      </p>
+      {renderIcon(icon, alt, iconWidth, iconHeight)}
+      <div className="metric-content">
+        <p className="metric-label">{label}</p>
+        <p className="metric">
+          {title}
+          {metric}
+        </p>
+      </div>
     </div>
   );
 };

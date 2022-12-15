@@ -1,6 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import ToggleButton from "./Toggle";
+import { toggle } from "./ToggleData";
 
 export default {
   title: "App/Toggle Button",
@@ -17,11 +18,5 @@ const Template: ComponentStory<typeof ToggleButton> = (args) => (
 export const Primary = Template.bind({});
 
 Primary.args = {
-  primary: true,
-  inactiveLabel: "Deactivated",
-  activeLabel: "Activated",
-  toggled: false,
-  onClick: () => {
-    console.log("Toggled");
-  },
+  ...toggle,
 };

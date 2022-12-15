@@ -1,5 +1,5 @@
 import React from "react";
-import "./Runner.css";
+import "./Recruiter.css";
 
 import MessageButton, {
   MessageButtonProps,
@@ -9,7 +9,7 @@ import Metrics, { MetricsProps } from "../metric/Metrics";
 import Tags, { TagsProps } from "../tag/Tags";
 import Socials, { SocialsProps } from "../socials/Socials";
 
-export interface RunnerTumbnailProps {
+export interface RecruiterTumbnailProps {
   primary?: boolean;
   title: string;
   rating: RatingProps;
@@ -19,16 +19,16 @@ export interface RunnerTumbnailProps {
   socials: SocialsProps;
 }
 
-const RunnerThumbnail = (props: RunnerTumbnailProps) => {
+const RecruiterThumbnail = (props: RecruiterTumbnailProps) => {
   const { title, rating, metrics, messageButton, tags, socials } = props;
   return (
-    <div className="runner-thumbnail-card">
-      <div className="runner-thumbnail-header">
-        <div className="runner-details">
-          <p className="runner-title">{title}</p>
+    <div className="recruiter-thumbnail-card">
+      <div className="recruiter-thumbnail-header">
+        <div className="recruiter-details">
+          <p className="recruiter-title">{title}</p>
           <Rating {...rating} />
         </div>
-        <div className="runner-details">
+        <div className="recruiter-details">
           <MessageButton {...messageButton} />
           <Socials {...socials} />
         </div>
@@ -39,4 +39,4 @@ const RunnerThumbnail = (props: RunnerTumbnailProps) => {
   );
 };
 
-export default RunnerThumbnail;
+export default RecruiterThumbnail;

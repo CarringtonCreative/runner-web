@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 import "./Avatar.css";
 
-export interface BiographyProps {
+export interface AvatarProps {
   primary?: boolean;
   image: StaticImageData;
   imageWidth: number;
@@ -47,7 +47,7 @@ const UploadAndDisplayImage = () => {
   );
 };
 
-const Avatar = (props: BiographyProps) => {
+const Avatar = (props: AvatarProps) => {
   const { alt, image, imageHeight, imageWidth } = props;
   return <div className="avatar-container">{UploadAndDisplayImage()}</div>;
 };

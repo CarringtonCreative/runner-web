@@ -1,0 +1,65 @@
+.recruiter-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.recruiter-profile-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: auto;
+  width: 33rem;
+  background-color: #faf5ff;
+  box-shadow: #aaa 0.1rem 0.1rem 0.5rem;
+  padding: 1rem;
+}
+
+.recruiter-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.recruiter-thumbnail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.recruiter-details {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+}
+
+.recruiter-title {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+}
+
+.recruiter-thumbnail-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: max-content;
+  width: 75%;
+  background-color: #faf5ff;
+  box-shadow: #aaa 0.1rem 0.1rem 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem auto;
+}

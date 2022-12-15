@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Runner.css";
+import "./Recruiter.css";
 
 import MessageButton, {
   MessageButtonProps,
@@ -12,7 +12,7 @@ import Biography, { BiographyProps } from "../biography/Biography";
 import EventSection, { EventCardsProps } from "../eventCard/EventSection";
 import Socials, { SocialsProps } from "../socials/Socials";
 
-export interface RunnerProfileProps {
+export interface RecruiterProfileProps {
   primary?: boolean;
   title: string;
   rating: RatingProps;
@@ -25,7 +25,7 @@ export interface RunnerProfileProps {
   socials: SocialsProps;
 }
 
-const RunnerProfile = (props: RunnerProfileProps) => {
+const RecruiterProfile = (props: RecruiterProfileProps) => {
   const {
     biography,
     title,
@@ -38,10 +38,10 @@ const RunnerProfile = (props: RunnerProfileProps) => {
     socials,
   } = props;
   return (
-    <div className="runner-profile-container">
-      <div className="runner-profile-header">
-        <div className="runner-details">
-          <p className="runner-title">{title}</p>
+    <div className="recruiter-profile-container">
+      <div className="recruiter-profile-header">
+        <div className="recruiter-details">
+          <p className="recruiter-title">{title}</p>
           <Rating {...rating} />
         </div>
         <MessageButton {...messageButton} />
@@ -56,4 +56,4 @@ const RunnerProfile = (props: RunnerProfileProps) => {
   );
 };
 
-export default RunnerProfile;
+export default RecruiterProfile;

@@ -1,23 +1,23 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import RunnerThumbnail from "./RunnerThumbnail";
-import { messageButtonData } from "../messageButton/MessageButtonData";
+import RecruiterThumbnail from "./RecruiterThumbnail";
 import { metricsData } from "../metric/MetricData";
-import { socials } from "../socials/SocialsData";
-import { tagSection } from "../tag/TagData";
+import { messageButtonData } from "../messageButton/MessageButtonData";
 import { rating } from "../rating/RatingData";
+import { tagSection } from "../tag/TagData";
+import { socials } from "../socials/SocialsData";
 
 export default {
-  title: "App/Runner Thumbnail",
-  component: RunnerThumbnail,
+  title: "App/Recruiter Thumbnail",
+  component: RecruiterThumbnail,
   argTypes: {
     backgroundColor: { control: "color" },
   },
-} as ComponentMeta<typeof RunnerThumbnail>;
+} as ComponentMeta<typeof RecruiterThumbnail>;
 
-const Template: ComponentStory<typeof RunnerThumbnail> = (args) => (
-  <RunnerThumbnail {...args} />
+const Template: ComponentStory<typeof RecruiterThumbnail> = (args) => (
+  <RecruiterThumbnail {...args} />
 );
 
 export const Primary = Template.bind({});

@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import LogoutButton from "./LogoutButton";
-import LogoutIcon from "../../../public/logout.png";
+import { logoutButtonData } from "./LogoutButtonData";
 
 export default {
   title: "App/Logout Button",
@@ -18,8 +18,5 @@ const Template: ComponentStory<typeof LogoutButton> = (args) => (
 export const Primary = Template.bind({});
 
 Primary.args = {
-  label: "Message",
-  image: LogoutIcon,
-  imageWidth: 20,
-  imageHeight: 20,
+  ...logoutButtonData,
 };

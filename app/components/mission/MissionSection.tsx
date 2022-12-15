@@ -1,28 +1,11 @@
 import React from "react";
 import "./MissionTag.css";
-
-export interface MissionProps {
-  primary?: boolean;
-  label: string;
-  color: string;
-  backgroundColor: string;
-}
+import MissionTag, { MissionTagProps } from "./MissionTag";
 
 export interface MissionSectionProps {
   title: string;
-  tags: MissionProps[];
+  tags: MissionTagProps[];
 }
-
-const getMissionTag = (tag: MissionProps) => {
-  const { color, backgroundColor, label } = tag;
-  return (
-    <div className="mission-tag-container" style={{ backgroundColor }}>
-      <p className="mission-tag-label" style={{ color }}>
-        {label}
-      </p>
-    </div>
-  );
-};
 
 const MissionSection = (props: MissionSectionProps) => {
   const { tags, title } = props;
@@ -31,7 +14,7 @@ const MissionSection = (props: MissionSectionProps) => {
       <h3 className="mission-section-title">{title}</h3>
       <ul className="mission-tags-container">
         {tags.map((tag, index) => (
-          <li key={index}>{getMissionTag(tag)}</li>
+          <li key={index}>{<MissionTag {...tag} />}</li>
         ))}
       </ul>
     </div>

@@ -47,7 +47,25 @@ const MenuItemClasses = {
   },
 };
 
+const selected = {
+  backgroundColor: "#eaabff",
+  color: "#fff",
+  "&:hover": {
+    backgroundColor: "#eecef9",
+  },
+};
+
+const SIDEBAR = {
+  DASHBOARD: "DASHBOARD",
+  RECRUITERS: "",
+  RUNNERS: "",
+  GIGS: "",
+  MATCHES: "",
+  SETTINGS: "",
+};
+
 const MainMenu = (props: any) => {
+  const [selectedMenuItem, setSelectedMenuItem] = useState();
   const [open, setOpen] = useState(true);
   const { collapseSidebar } = useProSidebar();
   const menuToggleSymbol = open ? "←" : "→";
@@ -83,9 +101,13 @@ const MainMenu = (props: any) => {
           >
             <MenuItem
               rootStyles={{
-                ["." + menuClasses.button]: MenuItemClasses,
+                ["." + menuClasses.button]:
+                  selectedMenuItem == SIDEBAR.DASHBOARD
+                    ? selected
+                    : MenuItemClasses,
               }}
               routerLink={<Link href="/" />}
+              onClick={() => {}}
             >
               <div
                 style={{
@@ -259,9 +281,6 @@ const MainMenu = (props: any) => {
             />
           </div>
         </Sidebar>
-        {/* <button className="menu-toggle-button" onClick={toggleSidebar}>
-          <span>{menuToggleSymbol}</span>
-        </button> */}
         <Content />
       </main>
     </div>

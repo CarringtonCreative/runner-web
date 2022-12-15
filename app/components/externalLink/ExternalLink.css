@@ -1,0 +1,22 @@
+.external-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  width: max-content;
+}
+
+.external-link {
+  cursor: pointer;
+}
+
+.external-link-title {
+  color: #ffbc59;
+  font-family: "Gotham Medium";
+  font-size: 1.25rem;
+}
+
+.external-link:hover {
+  opacity: 0.85;
+}

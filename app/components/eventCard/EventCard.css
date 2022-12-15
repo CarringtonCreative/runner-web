@@ -67,3 +67,7 @@
   margin: 0.5rem 0rem;
   width: 100%;
 }
+
+.event-card-container:hover {
+  opacity: 0.85;
+}

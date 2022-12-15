@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Metric from "./Metric";
-import Icon from "../../../public/sneakers.png";
+import { metric } from "./MetricData";
 
 export default {
   title: "App/Metric",
@@ -14,14 +14,4 @@ export default {
 const Template: ComponentStory<typeof Metric> = (args) => <Metric {...args} />;
 
 export const Primary = Template.bind({});
-
-Primary.args = {
-  primary: true,
-  imagePath: Icon,
-  alt: "Hours Booked",
-  title: "",
-  metric: 0,
-  label: "hrs booked",
-  iconWidth: 25,
-  iconHeight: 25,
-};
+Primary.args = { ...metric };
