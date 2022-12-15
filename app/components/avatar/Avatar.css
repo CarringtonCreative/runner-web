@@ -1,0 +1,15 @@
+.biography-container {
+  height: auto;
+  max-width: 25rem;
+}
+
+.biography-title {
+  color: #351572;
+  font-size: 1.25rem;
+  font-family: "Gotham Black";
+}
+
+.biography-description {
+  font-size: 0.85rem;
+  font-family: "Gotham Book";
+}

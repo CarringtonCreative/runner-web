@@ -1,0 +1,23 @@
+.main-menu-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5e0ff;
+}
+
+.menu-toggle-button {
+  font-size: 1rem;
+  color: #fff;
+  position: relative;
+  right: 1rem;
+  z-index: 5;
+}
+
+.menu-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

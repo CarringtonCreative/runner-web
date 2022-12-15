@@ -1,0 +1,20 @@
+.logout-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  cursor: pointer;
+  padding: 2rem 1rem;
+}
+
+.logout-button-label {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+  margin: 0rem 0.25rem;
+}
+
+.logout-button-container:hover {
+  opacity: 0.85;
+}

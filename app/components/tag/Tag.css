@@ -1,0 +1,39 @@
+.tags-section-container {
+  margin: 0.5rem 0rem;
+  height: auto;
+  width: 100%;
+}
+
+.tag-container {
+  height: inherit;
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+}
+
+.tags-title {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+}
+
+.tag-label {
+  font-size: 0.85rem;
+  font-family: "Gotham Bold";
+  margin: 0rem 0.15rem;
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.tag-container:hover {
+  opacity: 0.85;
+}

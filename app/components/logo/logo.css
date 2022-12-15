@@ -1,0 +1,61 @@
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+.logo {
+  font-family: "Roboto", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  cursor: pointer;
+  z-index: 1;
+}
+.logo-light {
+  color: white;
+}
+.logo-dark {
+  color: #351572;
+  background-color: transparent;
+}
+.logo-small {
+  font-size: 1rem;
+}
+.logo-medium {
+  font-size: 2rem;
+}
+.logo-large {
+  font-size: 3rem;
+}
+.dashes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+  position: relative;
+  left: 0.3rem;
+}
+
+.dash {
+  height: 0.25rem;
+  transform: skew(-25deg, 0deg);
+  background-color: #c9abe3;
+  align-self: flex-end;
+}
+
+.dash-top {
+  width: 0.75rem;
+}
+.dash-center {
+  width: 1.25rem;
+}
+.dash-bottom {
+  width: 1rem;
+}
+.dash-light {
+  background-color: #c9abe3;
+}
+.dash-dark {
+  background-color: #fff;
+}

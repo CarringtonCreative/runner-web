@@ -1,0 +1,39 @@
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.stars-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.stars-container li {
+  margin: 0.15rem;
+  cursor: pointer;
+}
+
+.ratings-container {
+  margin: 0.15rem;
+  cursor: pointer;
+}
+
+.ratings-container p {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1rem;
+  margin: 0rem 0.25rem;
+}
+
+.stars-container li > img,
+.ratings-container:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}

@@ -1,0 +1,36 @@
+.mission-section-container {
+  margin: 0.5rem 0rem;
+}
+.mission-tag-container {
+  height: inherit;
+  width: fit-content;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+}
+
+.mission-tag-label {
+  font-size: 0.85rem;
+  font-family: "Gotham Bold";
+  margin: 0rem 0.15rem;
+}
+
+.mission-section-title {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+}
+
+.mission-tags-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.mission-tag-container:hover {
+  opacity: 0.85;
+}

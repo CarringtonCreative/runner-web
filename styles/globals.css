@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #f5e0ff;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -24,6 +25,86 @@ a {
     background: black;
   }
 }
+
+@font-face {
+  font-family: "Gotham Black";
+  src: url("../asset/Gotham-Black.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../asset/Gotham-Bold.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../asset/Gotham-Book.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url("../asset/Gotham-Light.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Thin";
+  src: url("../asset/Gotham-Thin.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../asset/Gotham-Medium.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Medium Italic";
+  src: url("../asset/Gotham-MediumItalic.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Ultra";
+  src: url("../asset/Gotham-Ultra.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Ultra Italic";
+  src: url("../asset/Gotham-UltraItalic.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Gotham";
+  src: url("../asset/Gotham-Black.otf");
+  src: url("../asset/Gotham-Book.otf");
+  src: url("../asset/Gotham-Light.otf");
+  src: url("../asset/Gotham-Medium.otf");
+  src: url("../asset/Gotham-MediumItalic.otf");
+  src: url("../asset/Gotham-Ultra.otf");
+  src: url("../asset/Gotham-UltraItalic.otf");
+  font-weight: 400;
+  font-weight: 500;
+  font-weight: 600;
+  font-weight: 700;
+  font-weight: 800;
+  font-style: normal;
+} */
 
 @tailwind base;
 @tailwind components;

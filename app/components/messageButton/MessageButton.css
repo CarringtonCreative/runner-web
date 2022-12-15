@@ -1,0 +1,24 @@
+.message-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: max-content;
+  width: auto;
+  font-size: 0.85rem;
+  font-family: "Gotham Medium";
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border-color: #e2e8f0;
+  background-color: #c9abe3;
+  padding: 0.15rem 0.5rem;
+}
+
+.message-button-container img {
+  margin: 0.5rem;
+}
+
+.message-button-container:hover {
+  opacity: 0.9;
+}
