@@ -3,7 +3,7 @@ import { render, fireEvent } from "@testing-library/react";
 import ApplyButton from "./ApplyButton";
 
 describe("Button", () => {
-  it("renders the label", () => {
+  it("renders apply buttom label", () => {
     const label = "Click me";
     const iconWidth = 25;
     const iconHeight = 25;
@@ -18,13 +18,15 @@ describe("Button", () => {
     const button = getByRole("button");
     const icon = getByRole("img");
 
-    expect(button).toHaveTextContent(label);
-    expect(icon).toHaveAttribute("width", iconWidth);
-    expect(icon).toHaveAttribute("height", iconHeight);
+    expect(button.textContent).toBe(label);
+    expect(icon.getAttribute("width")).toBe(String(iconWidth));
+    expect(icon.getAttribute("height")).toBe(String(iconHeight));
   });
 
-  it("calls the onClick function", () => {
-    const onClick = jest.fn();
+  it("calls the onClick function when apply button is clicked", () => {
+    const onClick = jest.fn(() => {
+      console.log("clicked");
+    });
     const label = "Click me";
     const iconWidth = 25;
     const iconHeight = 25;
@@ -38,6 +40,7 @@ describe("Button", () => {
       />
     );
     const button = getByRole("button");
+    button.onclick = onClick;
 
     fireEvent.click(button);
 

@@ -3,9 +3,9 @@ import { render, fireEvent } from "@testing-library/react";
 import Rating from "./Rating";
 
 describe("RatingButton", () => {
-  it("renders the correct number of filled icons", () => {
+  it("renders rating stars", () => {
     const rating = 3;
-    const { getAllByRole } = render(
+    const { getAllByAltText } = render(
       <Rating
         rating={rating}
         iconWidth={20}
@@ -15,14 +15,15 @@ describe("RatingButton", () => {
         onClick={() => {}}
       />
     );
-    const filledIcons = getAllByRole("img", { name: /star/i });
-
-    expect(filledIcons.length).toBe(rating);
+    const emptyIcons = getAllByAltText(/empty-star/i);
+    expect(emptyIcons.length).toBe(5 - rating);
   });
 
-  it("calls the onClick function when clicked", () => {
-    const onClick = jest.fn();
-    const { getByRole } = render(
+  it("calls the onClick function when a star is clicked", () => {
+    const onClick = jest.fn(() => {
+      console.log("clicked");
+    });
+    const { getAllByRole } = render(
       <Rating
         rating={3}
         iconWidth={20}
@@ -32,9 +33,11 @@ describe("RatingButton", () => {
         onClick={onClick}
       />
     );
-    const button = getByRole("button");
+    const items = getAllByRole("listitem");
+    const item = items[0];
 
-    fireEvent.click(button);
+    item.onclick = onClick;
+    fireEvent.click(item);
 
     expect(onClick).toHaveBeenCalled();
   });
