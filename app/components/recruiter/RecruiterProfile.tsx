@@ -1,23 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Recruiter.css";
 
 import MessageButton, {
   MessageButtonProps,
 } from "../messageButton/MessageButton";
-import Rating, { RatingProps } from "../rating/Rating";
 import Metrics, { MetricsProps } from "../metric/Metrics";
 import Tags, { TagsProps } from "../tag/Tags";
 import MissionSection, { MissionSectionProps } from "../mission/MissionSection";
 import Biography, { BiographyProps } from "../biography/Biography";
 import EventSection, { EventCardsProps } from "../eventCard/EventSection";
 import Socials, { SocialsProps } from "../socials/Socials";
+import ExternalLink, { ExternalLinkProps } from "../externalLink/ExternalLink";
 
 export interface RecruiterProfileProps {
   primary?: boolean;
   title: string;
-  rating: RatingProps;
+  companyName: string;
+  companyUrl: string;
   metrics: MetricsProps;
   messageButton: MessageButtonProps;
+  externalLink: ExternalLinkProps;
   tags: TagsProps;
   missionSection: MissionSectionProps;
   biography: BiographyProps;
@@ -29,20 +31,20 @@ const RecruiterProfile = (props: RecruiterProfileProps) => {
   const {
     biography,
     title,
-    rating,
     metrics,
     messageButton,
     missionSection,
     tags,
     events,
     socials,
+    externalLink,
   } = props;
   return (
     <div className="recruiter-profile-container">
       <div className="recruiter-profile-header">
         <div className="recruiter-details">
           <p className="recruiter-title">{title}</p>
-          <Rating {...rating} />
+          <ExternalLink {...externalLink} />
         </div>
         <MessageButton {...messageButton} />
       </div>

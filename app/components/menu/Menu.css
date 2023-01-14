@@ -1,0 +1,65 @@
+.main-menu-content-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main-menu-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5e0ff;
+}
+
+.menu-toggle-button {
+  font-size: 1rem;
+  color: #fff;
+  position: relative;
+  right: 1rem;
+  z-index: 5;
+}
+
+.menu-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item-content-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu-item-text {
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+  margin: 0rem 1rem;
+}
+
+.menu-footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.menu-footer-title {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+  margin: 0rem 1rem;
+}
+
+.menu-footer-text {
+  color: #351572;
+  font-family: "Gotham Book";
+  font-size: 1rem;
+  margin: 0rem auto;
+}

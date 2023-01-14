@@ -1,0 +1,213 @@
+.gig-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  height: 10rem;
+  width: 12rem;
+  background-color: #faf5ff;
+  box-shadow: #aaa 0.1rem 0.1rem 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.gig-metric-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  margin: 0.25rem 0rem;
+}
+
+.gig-metric-header {
+  color: #c9abe3;
+  font-family: "Gotham Black";
+  font-size: 0.95rem;
+}
+
+.gig-metric-title {
+  color: #351572;
+  font-family: "Gotham Bold";
+  font-size: 0.85rem;
+}
+
+.gig-container:hover {
+  opacity: 0.85;
+  transform: scale(1.005);
+}
+
+.gig-thumbnail-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  height: max-content;
+  width: 25%;
+  min-width: 10rem;
+  min-height: 10rem;
+  background-color: #faf5ff;
+  box-shadow: #aaa 0.1rem 0.1rem 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.gig-thumbnail-title {
+  color: #c9abe3;
+  font-family: "Gotham Ultra";
+  font-size: 1.25rem;
+}
+
+.gig-thumbnail-header {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+}
+
+.gig-thumbnail-details {
+  margin: 0.5rem 0rem;
+}
+
+.gig-thumbnail-metrics {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 0.75rem;
+  margin: 0.25rem 0rem;
+}
+
+.gig-thumbnail-description {
+  color: #351572;
+  font-family: "Gotham Book";
+  font-size: 0.85rem;
+}
+
+.gig-thumbnail-description-container {
+  margin: 0.5rem 0rem;
+}
+
+.gig-card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  height: max-content;
+  width: 50%;
+  min-width: 10rem;
+  min-height: 10rem;
+  background-color: #faf5ff;
+  box-shadow: #aaa 0.1rem 0.1rem 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.gig-card-title {
+  color: #c9abe3;
+  font-family: "Gotham Ultra";
+  font-size: 1.25rem;
+}
+
+.gig-card-header {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+}
+
+.gig-card-details {
+  margin: 0.5rem 0rem;
+}
+
+.gig-card-metrics {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.75rem;
+  margin: 0.25rem 0rem;
+}
+
+.gig-card-description {
+  color: #351572;
+  font-family: "Gotham Book";
+  font-size: 0.85rem;
+}
+
+.gig-card-description-container {
+  margin: 0.5rem 0rem;
+}
+
+.gig-poc-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.25rem;
+}
+
+.gig-poc-person-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.25rem;
+  cursor: pointer;
+}
+
+.gig-poc-header {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1rem;
+}
+
+.gig-poc {
+  color: #351572;
+  font-family: "Gotham Book";
+  font-size: 0.85rem;
+}
+
+.gig-poc:hover,
+.gig-poc-person-container:hover,
+.gig-company-name:hover,
+.gig-company-container:hover {
+  color: #c9abe3;
+  opacity: 0.85;
+}
+
+.gig-company-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.5rem;
+}
+
+.gig-company-name {
+  color: #351572;
+  font-family: "Gotham Book";
+  font-size: 0.85rem;
+}
+
+.gig-card-subtitle-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.5rem;
+}
+
+.gig-thumbnail-subtitle-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.5rem;
+}
+
+.gig-thumbnail-container:hover {
+  transform: scale(1.01);
+}

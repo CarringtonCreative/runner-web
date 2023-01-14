@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import ExternalLink from "./ExternalLink";
-import ExternalLinkIcon from "../../../public/external-link.png";
+import { externalLink } from "./ExternalLinkData";
 
 export default {
   title: "App/External Link",
@@ -18,10 +18,5 @@ const Template: ComponentStory<typeof ExternalLink> = (args) => (
 export const Primary = Template.bind({});
 
 Primary.args = {
-  label: "Sēkr",
-  alt: "Google",
-  url: "https://google.com",
-  image: ExternalLinkIcon,
-  imageWidth: 15,
-  imageHeight: 15,
+  ...externalLink,
 };

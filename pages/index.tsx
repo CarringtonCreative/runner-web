@@ -1,12 +1,12 @@
 import React, { useState, useEffect, MouseEventHandler } from "react";
 import data from "../app/utils/data";
-import MainMenu from "../app/components/mainMenu/MainMenu";
+import Home from "../app/components/home/Home";
 
-Home.getInitialProps = async () => {
-  const companies = Object.values(data.matches.companies);
-  return { data, companies };
-};
+// App.getInitialProps = async () => {
+//   const companies = Object.values(data.matches.companies);
+//   return { data, companies };
+// };
 
-export default function Home(props: any) {
-  return <MainMenu />;
+export default function MainMenu(props: any) {
+  return <Home />;
 }

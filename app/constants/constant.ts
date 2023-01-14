@@ -31,6 +31,15 @@ export enum SKILL_LEVEL {
   FIVE = 5,
 }
 
+export const TAB = {
+  DASHBOARD: "DASHBOARD",
+  RECRUITERS: "RECRUITERS",
+  RUNNERS: "RUNNERS",
+  GIGS: "GIGS",
+  MATCHES: "MATCHES",
+  SETTINGS: "SETTINGS",
+};
+
 /* export enum ROLE {
   EXECUTIVE_ASSISTANT,
   HUMAN_RESOURCES,

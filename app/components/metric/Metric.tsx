@@ -5,9 +5,9 @@ import "./Metric.css";
 export interface MetricProps {
   primary?: boolean;
   alt: string;
-  title: string;
+  title?: string;
   label: string;
-  metric: number;
+  metric: number | string;
   icon: StaticImageData;
   iconWidth?: number;
   iconHeight?: number;

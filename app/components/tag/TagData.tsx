@@ -47,6 +47,32 @@ export const tags = [
   },
 ];
 
+export const companyRoles = [
+  {
+    primary: true,
+    label: "Operations",
+    color: "#fff",
+    backgroundColor: "#D64933",
+  },
+  {
+    primary: true,
+    label: "Executive Assistant",
+    color: "#fff",
+    backgroundColor: "#186254",
+  },
+  {
+    primary: true,
+    label: "Human Resouces",
+    color: "#fff",
+    backgroundColor: "#194A7A",
+  },
+];
+
+export const companyRolesTags = {
+  tags: companyRoles,
+  title: "Roles",
+} as TagsProps;
+
 export const tagSection = {
   tags,
   title: "Roles + Skills",

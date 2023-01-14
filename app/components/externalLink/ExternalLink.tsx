@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import "./ExternalLink.css";
 
-interface ExternalLinkProps {
+export interface ExternalLinkProps {
   primary?: boolean;
   alt: string;
   url: string;

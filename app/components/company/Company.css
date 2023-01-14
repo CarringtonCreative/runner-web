@@ -1,0 +1,93 @@
+.company-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.company-profile-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: auto;
+  width: 33rem;
+  background-color: #faf5ff;
+  box-shadow: #aaa 0.1rem 0.1rem 0.5rem;
+  padding: 1rem;
+}
+
+.company-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.company-thumbnail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.company-details {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+}
+
+.company-title {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+}
+
+.company-recruiters-title {
+  color: #351572;
+  font-family: "Gotham Black";
+  font-size: 1.25rem;
+  margin: 0.25rem 0rem;
+}
+
+.company-recruiter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  cursor: pointer;
+}
+
+.company-recruiter-name {
+  color: #351572;
+  font-family: "Gotham Medium";
+  font-size: 0.85rem;
+}
+
+.company-thumbnail-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: max-content;
+  width: 75%;
+  background-color: #faf5ff;
+  box-shadow: #aaa 0.1rem 0.1rem 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem auto;
+}
+
+.company-recruiter-name:hover,
+.company-recruiter:hover {
+  color: #c9abe3;
+  opacity: 0.85;
+}

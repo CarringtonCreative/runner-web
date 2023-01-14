@@ -12,6 +12,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@memberstack/react": "^2.0.1",
     "@popperjs/core": "^2.11.6",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",

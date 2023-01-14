@@ -1,5 +1,5 @@
 import { initCompanies } from "../api/companyApi/companyApi";
-import { initTalent } from "../api/talentApi/talentApi";
+import { initTalent } from "../api/runnerApi/runnerApi";
 import { findMatches } from "../api/matchApi/matchApi";
 
 const getData = () => {
