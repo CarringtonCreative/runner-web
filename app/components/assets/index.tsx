@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import LinkedinIcon from "../../../public/linkedin.png";
+import LinkedinIcon from "../../../public/linkedin-logo.png";
 import GitHubIcon from "../../../public/github.png";
 import TwitterIcon from "../../../public/twitter.png";
 import EmailIcon from "../../../public/email.png";

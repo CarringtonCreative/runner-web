@@ -1,4 +1,4 @@
-import LinkedInIcon from "../../../public/linkedin.png";
+import LinkedInIcon from "../../../public/linkedin-logo.png";
 import GitHubIcon from "../../../public/github.png";
 import TwitterIcon from "../../../public/twitter.png";
 import EmailIcon from "../../../public/email.png";

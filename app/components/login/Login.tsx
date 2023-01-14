@@ -2,7 +2,7 @@ import React from "react";
 import "./Login.css";
 
 import GitHubIcon from "../../../public/github.png";
-import LinkedinIcon from "../../../public/linkedin.png";
+import LinkedinIcon from "../../../public/linkedin-logo.png";
 import Image from "next/image";
 
 export interface LoginProps {}
